@@ -1,2 +1,3 @@
-# Ignore any WAV files committed accidentally
+# Ignore extra WAV files — only fahh.wav is tracked
 sounds/*.wav
+!sounds/fahh.wav

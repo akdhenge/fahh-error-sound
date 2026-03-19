@@ -65,9 +65,9 @@ if ($WavPath) {
     } else {
         Write-Warning "WAV file not found at '$WavPath'. Skipping."
     }
-} elseif (Test-Path (Join-Path $PSScriptRoot "sounds\error.wav")) {
-    Copy-Item (Join-Path $PSScriptRoot "sounds\error.wav") $destWav -Force
-    Write-Host "Copied default WAV from repo"
+} elseif (Test-Path (Join-Path $PSScriptRoot "sounds\fahh.wav")) {
+    Copy-Item (Join-Path $PSScriptRoot "sounds\fahh.wav") $destWav -Force
+    Write-Host "Copied default sound (fahh.wav) from repo"
 } elseif (-not (Test-Path $destWav)) {
     Write-Warning "No WAV file found. Place a .wav file at '$destWav', or rerun:"
     Write-Warning "  .\install.ps1 -WavPath 'C:\path\to\your\sound.wav'"

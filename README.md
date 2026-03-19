@@ -7,7 +7,12 @@ Plays a custom sound whenever a command fails in your PowerShell terminal — co
 ## Requirements
 
 - Windows with PowerShell 5.1+
-- A `.wav` file to use as the error sound
+
+---
+
+## Included sound
+
+`sounds/fahh.wav` — based on the [FAHH meme sound](https://www.youtube.com/results?search_query=fahh+meme+sound). Used as the default. Swap it out for any `.wav` you like.
 
 ---
 
@@ -21,14 +26,14 @@ cd ps-error-sound
 
 **2. Run the installer**
 
-Using your own WAV file:
-```powershell
-.\install.ps1 -WavPath "C:\path\to\your\sound.wav"
-```
-
-Or drop a WAV named `error.wav` into the `sounds\` folder first, then:
+The default `fahh.wav` is included — just run:
 ```powershell
 .\install.ps1
+```
+
+Or use your own WAV file instead:
+```powershell
+.\install.ps1 -WavPath "C:\path\to\your\sound.wav"
 ```
 
 **3. Reload your profile**
@@ -122,8 +127,11 @@ The WAV file is loaded into memory at shell startup (`SoundPlayer.Load()`), so p
 
 ## Changing the sound
 
-Replace `~\.ps-error-sound\error.wav` with any `.wav` file, then reload your profile:
+The default is `sounds/fahh.wav` (FAHH meme sound). To use something else, either:
+
+Replace the file directly:
 ```powershell
+Copy-Item "C:\path\to\new\sound.wav" "$env:USERPROFILE\.ps-error-sound\error.wav"
 . $PROFILE
 ```
 
