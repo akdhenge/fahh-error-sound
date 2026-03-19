@@ -1,0 +1,2 @@
+# Ignore any WAV files committed accidentally
+sounds/*.wav
