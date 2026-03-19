@@ -131,7 +131,7 @@ The default is `sounds/fahh.wav` (FAHH meme sound). To use something else, eithe
 
 Replace the file directly:
 ```powershell
-Copy-Item "C:\path\to\new\sound.wav" "$env:USERPROFILE\.ps-error-sound\error.wav"
+Copy-Item "C:\path\to\new\sound.wav" "$env:USERPROFILE\.ps-error-sound\fahh.wav"
 . $PROFILE
 ```
 
