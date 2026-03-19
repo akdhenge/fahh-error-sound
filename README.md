@@ -8,6 +8,12 @@ Plays a custom sound whenever a command fails in your PowerShell terminal — co
 
 - Windows with PowerShell 5.1+
 
+> Built and tested on **PowerShell 7**. Should work on 5.1, but note that the profile path differs between versions:
+> - PS 7: `~\Documents\PowerShell\Microsoft.PowerShell_profile.ps1`
+> - PS 5.1: `~\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`
+>
+> The installer uses `$PROFILE` which resolves automatically for whichever version you run it from, so just make sure you run it in the correct shell.
+
 ---
 
 ## Included sound
