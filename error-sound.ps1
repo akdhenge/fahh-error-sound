@@ -16,9 +16,9 @@
 
 # --- Configuration -----------------------------------------------------------
 
-# Path to your WAV file. The installer places error.wav here automatically.
+# Path to your WAV file. The installer places fahh.wav here automatically.
 # Change this to any .wav file you prefer.
-$_ESWavPath = "$env:USERPROFILE\.ps-error-sound\error.wav"
+$_ESWavPath = "$env:USERPROFILE\.ps-error-sound\fahh.wav"
 
 # -----------------------------------------------------------------------------
 

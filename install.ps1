@@ -23,7 +23,7 @@ param(
 
 $installDir  = "$env:USERPROFILE\.ps-error-sound"
 $destScript  = "$installDir\error-sound.ps1"
-$destWav     = "$installDir\error.wav"
+$destWav     = "$installDir\fahh.wav"
 $profileLine = ". '$destScript'"
 $marker      = "ps-error-sound"
 
